@@ -1,6 +1,6 @@
 #import library needed
 import pandas as pd
-import streamlit as st 
+import streamlit as st
 import pickle
 import numpy as np
 
@@ -30,4 +30,3 @@ if st.button("Predict"):
 # Show Results when the button is clicked
     result = species[np.argmax(prediction)]
     st.write("**This flower belongs to " + result + " class**")
-
